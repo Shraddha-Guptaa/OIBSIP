@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shraddha developer portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f621d180c0.js" crossorigin="anonymous"></script>
+    </head>
+    <style>
+*{margin: 0;
+padding: 0;
+}
+body{ background-color:rgb(241, 231, 216);
+color:rgb(19, 41, 59);
+font-family: poppins,sans-serif;
+}
+nav{display:flex;
+justify-content: space-around;
+align-items: center;
+height: 70px;
+background-color: rgb(234, 154, 241);
+}
+nav ul{ 
+    display: flex;
+    justify-content: center;;
+}
+nav ul li{ 
+    list-style: none;
+    margin:0 25px;
+}
+nav ul li a{
+    text-decoration:none ;
+    color:rgb(44, 61, 155)
+}
+nav ul li:hover{
+color: rgb(211, 56, 152);
+font-size: 1.2rem;
+text-decoration: underline;
+
+}
+
+.left{ font-size: 1rem;
+    display:flex;
+justify-content: space-around;
+margin: 110px 0;
+align-items:center;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: rgb(18, 17, 43);
+
+}
+
+.firstsection{display: flex;
+justify-content: space-around;
+margin: 110px 0;
+align-items: center;
+}
+
+.firstsection >div{ 
+    width: 30%;
+}
+.rightsection img{
+    
+    width: 90%;
+}
+.leftsection{ 
+    width: 30%;
+    font-size: 2.5rem;
+    
+}
+.purple{
+    color: rgb(134, 10, 114);
+}
+#element{
+    color: rgb(134, 10, 114);
+}
+.secondsection{
+    max-width: 80vw;
+    margin:auto;
+    font-size: 1rem;
+    height: 40rem;
+    align-items: center;
+}
+
+
+main hr{
+border: 0;
+background-color:rgb(102, 57, 79);
+height: 1.2px;
+margin: 40px 80px;
+}
+.right  img{
+    width: 400px;
+    align-items: center;
+    padding: 0 320px;
+}
+
+.secondsection h1{
+    font-size: 45px;
+    font-weight: 550;
+    color: rgb(134, 10, 114);
+;
+}
+
+.secondsection .left div{
+    padding: 0px 10px;
+text-align:start;
+    
+}
+
+
+
+
+
+
+#about {
+    padding: 30px 10px;
+    margin: 2.5rem;
+color: rgb(110, 37, 86);
+
+}
+
+.row{
+    display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.aboutcol1{
+    flex-basis: 35%;
+}
+
+.aboutcol1 img{
+    width: 75%;
+    border-radius: 15px;
+}
+
+
+.aboutcol2{
+    flex-basis: 60%;
+}
+
+.sub-title{
+    font-size: 45px;
+    font-weight: 550;
+    color:  rgb(134, 10, 114);
+
+
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+p{
+    text-align: justify;
+    
+}
+
+#services{
+    padding: 30px ;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div{
+    background-color: rgb(231, 159, 222);
+    padding: 30px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius:10px;
+    transform: background 0.5s, transform 0.5s;
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+
+}
+.services-list div a{
+    text-decoration: none;
+    color: rgb(41, 29, 41);
+    font-size: 15px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-list div:hover{
+    background-color: rgb(133, 88, 172);
+    transform: translateY(-10px);
+}
+
+
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+    
+    
+}
+.contact-left p i{
+    color:rgb(59, 26, 47);
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons i{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    margin-top: 20px;
+    color:rgb(98, 59, 129);
+    display: inline-block;
+    transition: transform 0.5s;
+}
+ .social-icons i:hover{
+    color: rgb(106, 106, 194);
+    transform: translateY(-5px);
+ }
+.btn.btn2{
+    display: inline-block;
+    background-color: rgb(69, 57, 138);
+color: rgb(235, 192, 217);
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.contact-right form{
+    width: 85% ;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none; 
+    background-color: rgb(207, 166, 189);
+    padding:15px ;
+    margin:15px 0;
+    color: rgb(34, 14, 27);
+    font-size: 18px;
+    border-radius: 6px;
+
+}
+.copyright{
+    width: 100%;
+    padding: 15px 0;
+    background-color: rgb(88, 28, 83);
+    font-weight:300 ;
+margin-top: 120px;
+}
+.copyright p{
+    color: rgb(241, 206, 240);
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+<body>
+    <header>
+    <nav>
+        <div class="left"><h3>Shraddha's Portfolio</h3></div>
+        <div class="right">
+            <ul>
+          <li>Home</li>  
+            <li>Education</li>
+            <li>About</li>
+            <li>My Service</li>
+            <li>Contact me</li>
+        </ul></div>
+        <nav>
+</header>
+<main>
+    <section class="firstsection">
+    
+        <div class="leftsection">
+            welcome to my portfolio...
+            <div>my name is <span class="purple">Shraddha </span>and i am a passionate </div>
+        
+        <span id="element"></span>
+</div>
+   <div class="rightsection">
+    
+    <img src="/img3.jpg" alt="">
+    </div>
+<!------------Education--------->
+
+
+</section>
+<hr>
+<section class="secondsection">
+    <h1>Education</h1>
+
+<div class=" right">
+    <img src="/pen.jpg"
+    
+</div>
+
+    <div class="left">
+    
+
+<div>
+    <h4> Post Graduation</h4>
+<h5>Master Of Computer Application</h5>
+<p>College Name : Sant Gadge Baba Amravati University</p>
+<p>percentage : 62.00%(in first year)</p>
+<p>year : 2022-2024</p>
+<hr></div>
+
+<div>
+<h4> Graduation</h4> 
+<h5>Bachelor of science</h5>
+<p>College Name : Vidyabharti College Of Amravati</p>
+<p>Percentage : 76.51%</p>
+<p>year : 2019-2022</p>
+<hr></div>
+
+<div>
+<h4> HSC </h4>
+<p> College Name : Smt STK jr college of mghs</p>
+<p>Percentage : 56.15%</p>
+<p>year: 2017-2019</p>
+<hr></div>
+
+<div>
+
+<h4>SSC</h4>
+<p>School Name : Manibai Gujarati High School Of Amravati </p>
+<p>Percentage : 72.00%</p>
+<p>year : 2016-2017</p>
+<hr></div>
+
+</section>
+<hr>
+<!---about---------------------->
+</section>
+
+
+<div id="about">
+<div class="container">
+<div class="row">
+        <div class="aboutcol1">
+            <img src="\mypic2.jpg" alt="">
+        </div>
+            <div class="aboutcol2">
+             <h1 class="sub-title"> About Me</h1>
+               <p>Hello, I'm Shraddha, a passionate Web Developer and IT enthusiast eager to embark on a journey in the dynamic world of technology. With a Master's degree in Computer Application and a hunger for knowledge, I am committed to bringing innovative solutions to life.During my academic journey, I honed my skills in programming languages like C, JAVA, PYTHON, gained practical experience through projects such as Train Booking System using JAVA & MYSQL and cultivated a strong foundation in problem-solving.</p><p> My love for technology isn't limited to my studies; I'm an avid follower of tech trends and I'm always excited to explore new technologies and methodologies.
+                    What sets me apart is my ability to learn quickly, adapt to different challenges, and work collaboratively in a team. I thrive in a fast-paced environment, where every day presents an opportunity to grow and innovate.
+               </p> <p>     As I take my first steps into the IT industry, I'm looking forward to contributing my skills, passion, and dedication to a forward-thinking organization that values creativity and embraces change. Together, let's create the future of technology.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+            </div>
+        </div>
+<hr>
+
+    </div>
+</div>
+
+<!--------- my services --------->
+   <div id="services">
+    <h1 class="sub-title">My Services</h1>
+   <div class="services-list">
+<div>
+    
+    <h2> Web Developer</h2>
+    <img src="/wdevlopment.jpg" height="200px">
+
+<p>I turn ideas into interactive websites with clean code and seamless user experience.</p>
+<a href="#">Learn more</a>
+</div>
+<div><h2>  Web Designer</h2>
+    <img src="/webdesign.jpg" height="200px" width="330px">
+
+<p>I create visually stunning websites that blend aesthetics and functionality for an unforgettable user experience.</p>
+<a href="#">Learn more</a>
+</div>
+<div>  <h2>Programmer</h2>
+    <img src="/programing.jpg" height="200px" width="330px">
+
+<p>As a programmer, i thrive on the challenge of turning complex logic into elegant and functional software.</p>
+<a href="#">Learn more</a>
+</div>
+
+   </div>
+   </div>
+
+<hr>
+<!--------------contact me------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">contact me</h1>
+<p><i class="fa-solid fa-envelope"></i>guptashraddha095@gmail.com</p>
+<p><i class="fa-solid fa-phone"></i>9356597020</p>
+<div class="social-icons">
+   <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-linkedin"></i>
+</div>
+      </div>
+            <div class="contact-right">
+<form>
+    <input type="text" name="Name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+<button type="submit" class="btn btn2">Submit</button>
+</form>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright @ shraddha.2023 </p>
+    </div>
+</div>
+
+
+
+
+
+
+
+</main>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+<script>
+    var typed = new Typed('#element', {
+      strings: [' web developer','web designer', 'programmer.'],
+      typeSpeed: 50,
+    })
+  </script>
+
+
+</body>
+</html>
+
